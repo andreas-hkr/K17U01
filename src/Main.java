@@ -6,6 +6,15 @@ public class Main {
         //
         // Skapa en array med djur-objekt i, loopa igenom alla djur och kalla på deras makeSound-metod
 
+        Animal[] animals = {
+                new Dog("Tax"),
+                new Snake(true),
+                new Dog("Beagle"),
+                new Snake(false)
+        };
 
+        for (int i=0; i < animals.length; i++) {
+            animals[i].makeSound();
+        }
     }
 }
